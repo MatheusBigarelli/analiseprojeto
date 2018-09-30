@@ -1,0 +1,15 @@
+<h1>Login</h1>
+
+{% if error_message %}
+<p>{{ error_message }}</p>
+{% endif %}
+
+{% if usuario and senha %}
+<p><strong>Usuario</strong>: {{ usuario }}</p>
+<p><strong>Senha</strong>: {{ senha }}</p>
+{% endif %}
+
+
+<form action="{% url 'pagina:pagina-pessoal' user password %}" method="post">
+
+</form>
